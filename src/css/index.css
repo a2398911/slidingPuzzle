@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+#root{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.wrap{
+  height: 300px;
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cell{
+  border: 1px solid #eee;
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+  transition: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(57,62,70,1);
+}
+.cell[data-hidden='true'] {
+  background-color: #ddd;
+  color: #ddd;
+}
+input{
+  border: none;
+  border-bottom: 1px solid #EEEEEE;
+  padding: 5px;
+  color: #FD7013;
+  text-align: center;
+  font-weight: bold;
+  transition: .3s;
+}
+input:focus{
+  border-color: #F0B775;
+}
+::-webkit-input-placeholder{
+  color: #ddd;
+}
+.name{
+  font-size: 16px;
+  color: #FD7013;
+}
+.button{
+  margin-left: 10px;
+  background-color: #FD7013;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 2px 8px;
+  border-radius: 9.5px;
+  transition: .3s;
+}
+.button:focus, input:focus{
+  outline: none;
+}
+.button:active, .button:hover{
+  background-color: #D65F00;
+}
+.titleWrap{
+  margin-bottom: 20px;
+  height: 80px;
+}
+.name{
+  text-align: center;
+}
+.StepCount{
+  color: #FD7013;
+  margin-bottom: 10px;
+}
+.winner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.winner h5{
+  margin: 0;
+  font-size: 18px;
+  color: #716e77;
+  letter-spacing: 1px;
+}
+.winner button {
+  margin-left: 0;
+  font-weight: bold;
+  margin-top: 5px;
+}
