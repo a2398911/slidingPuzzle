@@ -43,9 +43,9 @@ class App extends Component {
   }
 
   startRandom = () => {
-    let randomCells = this.state.initCells
+    // let randomCells = this.state.initCells
 
-    // let randomCells = this.state.initCells.sort(this.randomsort);
+    let randomCells = this.state.initCells.sort(this.randomsort);
     randomCells.forEach((item, index) => {
       if(index < 3) {
         item.row = 0;
